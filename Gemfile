@@ -1,4 +1,12 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in zussar.gemspec
+gem 'rake'
+
+group :development do
+end
+
+group :test do
+  gem 'rspec', '>= 2.11'
+end
+
 gemspec

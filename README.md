@@ -2,6 +2,8 @@
 
 A Ruby interface to the Zussar API.
 
+http://www.zusaar.com/doc/api.html
+
 ## Installation
 
 Add this line to your application's Gemfile:

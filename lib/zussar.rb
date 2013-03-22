@@ -1,5 +1,5 @@
 require "zussar/version"
+require 'zussar/user'
 
 module Zussar
-  # Your code goes here...
 end
