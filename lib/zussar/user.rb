@@ -1,16 +1,23 @@
 module Zussar
   class User
-    def initialize(attrs = {})
-      @id         = attrs['id'] || attrs['user_id']
-      @profile_id = attrs['profile_id']
-      @nickname   = attrs['nickname']
-      @status     = attrs['status']
-    end
+    attr_reader :id
 
-    attr_reader :id, :profile_id, :nickname, :status
+    def initialize(attrs = {})
+      @attrs = attrs
+    end
 
     def ==(other)
       other.is_a?(self.class) && (self.id == other.id)
+    end
+
+    class << self
+      def attr_reader(*attrs)
+        attrs.each do |attribute|
+          define method attribute do
+            @attrs[attribute.to_sym]
+          end
+        end
+      end
     end
   end
 end
