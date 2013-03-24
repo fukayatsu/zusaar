@@ -11,7 +11,7 @@ describe Zussar::Client do
       it "returns 10 events" do
         client = Zussar::Client.new
         result = client.search_events()
-        p events = result.event
+        events = result.events
         events.size.should == 10
       end
     end
@@ -25,9 +25,9 @@ describe Zussar::Client do
       it "returns 1 event" do
         client = Zussar::Client.new
         result = client.search_events(event_id: 545003) # http://www.zusaar.com/event/545003
-        events  = result.event
+        events  = result.events
         events.size.should == 1
-        events[0]["event_id"] = 545003
+        events.first.event_id.should == "545003"
       end
     end
   end
@@ -42,15 +42,15 @@ describe Zussar::Client do
       it "returns 10 events" do
         client = Zussar::Client.new
         result = client.search_users()
-        events = result.event
+        events = result.events
         events.size.should == 10
       end
 
       it "has users for each event" do
         client = Zussar::Client.new
         result = client.search_users()
-        events = result.event
-        events[0]['users'].class.should == Array
+        events = result.events
+        events.first.users.class.should == Array
       end
     end
   end
