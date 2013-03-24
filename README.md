@@ -1,8 +1,8 @@
 # Zussar
 
-A Ruby interface to the Zussar API.
+A Ruby interface to the Zussar API. Inspired by Twitter gem.
 
-http://www.zusaar.com/doc/api.html
+[Zusaar API doc](http://www.zusaar.com/doc/api.html)
 
 ## Installation
 
@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Zussar.search_events(keyword: 'ruby')
+
+Zussar.search_users(nickname: 'fukayatsu')
+```
 
 ## Contributing
 
