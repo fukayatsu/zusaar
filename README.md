@@ -1,4 +1,5 @@
 # Zusaar
+[![Build Status](https://travis-ci.org/fukayatsu/zusaar.png?branch=master)](https://travis-ci.org/fukayatsu/zusaar)
 
 A Ruby interface to the Zusaar API. Inspired by Twitter gem.
 
