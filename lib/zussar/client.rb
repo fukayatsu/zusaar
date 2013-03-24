@@ -7,7 +7,7 @@ module Zussar
   class Client
     include Zussar::API::Search
 
-    def  get(path, params = {})
+    def get(path, params = {})
       request(:get, path, params)
     end
 
