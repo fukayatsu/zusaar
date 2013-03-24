@@ -1,6 +1,6 @@
-# Zussar
+# Zusaar
 
-A Ruby interface to the Zussar API. Inspired by Twitter gem.
+A Ruby interface to the Zusaar API. Inspired by Twitter gem.
 
 [Zusaar API doc](http://www.zusaar.com/doc/api.html)
 
@@ -8,7 +8,7 @@ A Ruby interface to the Zussar API. Inspired by Twitter gem.
 
 Add this line to your application's Gemfile:
 
-    gem 'zussar'
+    gem 'zusaar'
 
 And then execute:
 
@@ -16,14 +16,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install zussar
+    $ gem install zusaar
 
 ## Usage
 
 ```
-Zussar.search_events(keyword: 'ruby')
+Zusaar.search_events(keyword: 'ruby')
 
-Zussar.search_users(nickname: 'fukayatsu')
+Zusaar.search_users(nickname: 'fukayatsu')
 ```
 
 ## Contributing

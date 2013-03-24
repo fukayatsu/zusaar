@@ -1,3 +1,3 @@
-module Zussar
+module Zusaar
   VERSION = "0.0.1"
 end

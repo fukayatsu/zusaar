@@ -1,7 +1,7 @@
-require 'zussar/base'
+require 'zusaar/base'
 
-module Zussar
-  class Identity < Zussar::Base
+module Zusaar
+  class Identity < Zusaar::Base
     attr_reader :id
 
     def ==(other)

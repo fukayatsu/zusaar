@@ -1,14 +1,14 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'zussar/version'
+require 'zusaar/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "zussar"
-  spec.version       = Zussar::VERSION
+  spec.name          = "zusaar"
+  spec.version       = Zusaar::VERSION
   spec.authors       = ["fukayatsu"]
   spec.email         = ["fukayatsu@gmail.com"]
-  spec.description   = %q{A Ruby interface to the Zussar API.}
+  spec.description   = %q{A Ruby interface to the Zusaar API.}
   spec.summary       = spec.description
   spec.homepage      = ""
   spec.license       = "MIT"

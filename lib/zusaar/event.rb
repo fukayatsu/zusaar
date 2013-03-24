@@ -1,7 +1,7 @@
-require 'zussar/identity'
+require 'zusaar/identity'
 
-module Zussar
-  class Event < Zussar::Identity
+module Zusaar
+  class Event < Zusaar::Identity
     attr_reader :event_id, :title, :catch, :description, :event_url,
                 :started_at, :ended_at, :pay_type, :url, :limit,
                 :address, :place, :lat, :lon, :owner_id, :owner_profile_url,
@@ -13,7 +13,7 @@ module Zussar
 
       if attrs['users']
         @users = attrs['users'].map { |user|
-          Zussar::User.new(user)
+          Zusaar::User.new(user)
         }
       end
 

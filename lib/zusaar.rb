@@ -1,13 +1,13 @@
-require "zussar/version"
-require 'zussar/client'
-require 'zussar/identity'
-require 'zussar/user'
+require "zusaar/version"
+require 'zusaar/client'
+require 'zusaar/identity'
+require 'zusaar/user'
 
-module Zussar
+module Zusaar
   class << self
     def client
       return @client if defined?(@client)
-      @client = Zussar::Client.new
+      @client = Zusaar::Client.new
     end
 
     def respond_to_missing?(method_name, include_private = false)

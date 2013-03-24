@@ -1,4 +1,4 @@
-module Zussar
+module Zusaar
   class Base
     def initialize(attrs = {})
       @attrs = attrs

@@ -1,6 +1,6 @@
-require 'zussar/search_results'
+require 'zusaar/search_results'
 
-module Zussar
+module Zusaar
   module API
     module Search
       def search_events(query = {})

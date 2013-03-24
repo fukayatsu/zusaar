@@ -1,11 +1,11 @@
 require 'faraday'
 require 'faraday_middleware'
-require 'zussar/api/search'
-require 'zussar/version'
+require 'zusaar/api/search'
+require 'zusaar/version'
 
-module Zussar
+module Zusaar
   class Client
-    include Zussar::API::Search
+    include Zusaar::API::Search
 
     def get(path, params = {})
       request(:get, path, params)
@@ -23,7 +23,7 @@ module Zussar
         connection_options = {
           :headers => {
             :accept => 'application/json',
-            :user_agent => "Zussar Ruby Gem #{Zussar::VERSION}",
+            :user_agent => "Zusaar Ruby Gem #{Zusaar::VERSION}",
           },
           :request => {
             :open_timeout => 5,

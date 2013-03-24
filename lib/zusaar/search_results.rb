@@ -1,13 +1,13 @@
-require 'zussar/base'
-require 'zussar/event'
+require 'zusaar/base'
+require 'zusaar/event'
 
-module Zussar
-  class SearchResults < Zussar::Base
+module Zusaar
+  class SearchResults < Zusaar::Base
     attr_reader :results_returned, :results_start
 
     def initialize(attrs = {})
       @events = attrs['event'].map { |event|
-        Zussar::Event.new(event)
+        Zusaar::Event.new(event)
       }
 
       super(attrs)

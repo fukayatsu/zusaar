@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Zussar::Client do
+describe Zusaar::Client do
   describe '#event_search' do
     context "search with no query" do
       before do
@@ -9,7 +9,7 @@ describe Zussar::Client do
       end
 
       it "returns 10 events" do
-        client = Zussar::Client.new
+        client = Zusaar::Client.new
         result = client.search_events()
         events = result.events
         events.size.should == 10
@@ -23,7 +23,7 @@ describe Zussar::Client do
       end
 
       it "returns 1 event" do
-        client = Zussar::Client.new
+        client = Zusaar::Client.new
         result = client.search_events(event_id: 545003) # http://www.zusaar.com/event/545003
         events  = result.events
         events.size.should == 1
@@ -40,14 +40,14 @@ describe Zussar::Client do
       end
 
       it "returns 10 events" do
-        client = Zussar::Client.new
+        client = Zusaar::Client.new
         result = client.search_users()
         events = result.events
         events.size.should == 10
       end
 
       it "has users for each event" do
-        client = Zussar::Client.new
+        client = Zusaar::Client.new
         result = client.search_users()
         events = result.events
         events.first.users.class.should == Array

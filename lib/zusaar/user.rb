@@ -1,12 +1,12 @@
-module Zussar
-  class User < Zussar::Identity
+module Zusaar
+  class User < Zusaar::Identity
     attr_reader :user_id, :profile_url, :nickname, :status
 
     alias_method :id, :user_id
 
     def initialize(attrs = {})
       if attrs['profile_url']
-        # zussar apiのバグ対応
+        # zusaar apiのバグ対応
         attrs['profile_url'] = fix_url(attrs['profile_url'])
       end
 
